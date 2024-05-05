@@ -1,0 +1,39 @@
+* {
+  box-sizing:border-box;
+}
+body, html {
+  margin: 0%;
+  padding: 0%;
+  background-color: #FCFFE7;
+}
+.header {
+  min-height: 11vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+.bottom-melt {
+  position: absolute; /* Position the melting effect at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100px; /* Height of the melting effect */
+  background: #6e00ff; /* Header color */
+  border-top: 20px solid transparent; /* Transparent border on top */
+  border-bottom: 20px solid #6e00ff; /* Colored border on bottom */
+  transform-origin: bottom center; /* Set the transformation origin to the bottom center */
+  transform: scaleY(2) rotateX(45deg); /* Apply scaling and rotation */
+}
+.header h1{
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  font-family: "Libre Baskerville";
+}
+.update-button{
+  background-color: #000000;
+  color: white;
+}
