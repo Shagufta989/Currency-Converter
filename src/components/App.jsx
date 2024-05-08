@@ -4,6 +4,8 @@ import axios from "axios";
 import UpdateButton from "./UpdateButton.jsx";
 import countryCurrencies from "./CountriesCurrencies.js";
 import CountryForm from "./CountrySelectionForm.jsx";
+import GraphicCard from "./GraphicCard.jsx";
+import { hola } from "./GraphicCard.jsx";
 
 function App() {
     var countryCode2, countryCode1, firstRate, secondRate
@@ -12,7 +14,6 @@ function App() {
         useEffect(() => {
             getRates();
         }, []);
-
     async function getUserSelections(country1, country2) {
         const firstCountry = country1;
         const secondCountry = country2;
@@ -39,12 +40,10 @@ function App() {
     useEffect(() => {
         console.log("Updated rates:", rates);
     }, [rates]);
-
     return (
         <div>
             <Header />
-            <UpdateButton Update={getRates} />
-            <CountryForm countries={countryCurrencies} callBack={getUserSelections} />
+            <GraphicCard></GraphicCard>
         </div>
     );
 }
