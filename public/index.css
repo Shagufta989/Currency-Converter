@@ -112,6 +112,7 @@ html {
   display:flex;
   flex-flow: row nowrap;
   min-width: 100%;
+  padding: 0px 12px 15px;
   align-items: center;
 }
 .first-percentage{
@@ -119,12 +120,12 @@ html {
   background-color: #c70e4c;
   height: 0.5vw;
   width: 70%;
-  /* border-radius: 10px 0px 0px 10px; */
+  border-radius: 10px 0px 0px 10px;
 }
 .second-percentage{
   align-content: center;
   background-color: tomato;
   height: 0.5vw;
   width: 30%;
-  /* border-radius: 0px 10px 10px 0px; */
+  border-radius: 0px 10px 10px 0px;
 }
