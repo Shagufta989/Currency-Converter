@@ -12,9 +12,9 @@ function GraphicCard({ result }) {
                 <div className="selection-area">
                     <div className="countryone">
                         <p className="countryname">Country One</p>
-                        <p className="countryno2-button">
+                        <div className="countryno2-button">
                             Country Button<p className="countryno1-rate">Price</p>
-                        </p>
+                        </div>
                     </div>
 
                     <div className="compare-text">
@@ -23,9 +23,9 @@ function GraphicCard({ result }) {
 
                     <div className="countrytwo">
                         <p className="countryname">Country Two</p>
-                        <p className="countryno2-button">
+                        <div className="countryno2-button">
                             Country Button<p className="countryno2-rate">Price</p>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div className="rate-bar">
