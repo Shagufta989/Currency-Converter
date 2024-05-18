@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header.jsx";
 import GraphicCard from "./GraphicCard.jsx";
 import UpdateRatesButton from "./UpdateRatesButton.jsx";
+import SampleGraphicCard from "./SampleGrahicCard.jsx";
 
 function App() {
     const [todayRate, setTodayRate] = useState(null)
@@ -29,6 +30,7 @@ function App() {
             <Header />
             <UpdateRatesButton fetchRates={calculateRates}/>
             <GraphicCard />
+            <SampleGraphicCard />
             <p>{todayRate}</p>
             <p>{yesterdayRate}</p>
         </div>
