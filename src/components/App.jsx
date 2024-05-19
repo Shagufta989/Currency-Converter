@@ -1,17 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./Header.jsx";
-import GraphicCard from "./GraphicCard.jsx";
-import UpdateRatesButton from "./UpdateRatesButton.jsx";
-import SampleGraphicCard from "./SampleGrahicCard.jsx";
+import GraphicCard from "./GrahicCard.jsx";
 
 function App() {
-    const [todayRate, setTodayRate] = useState(null)
-    const [yesterdayRate, setYesterdayRate] = useState(null)
+
     // var countryCode2, countryCode1
-    function calculateRates(today, yesterday){
-        setTodayRate(today)
-        setYesterdayRate(yesterday)
-    }
+
     // async function getUserSelections(country1, country2) {
     //     const firstCountry = country1;
     //     const secondCountry = country2;
@@ -28,11 +22,7 @@ function App() {
     return (
         <div>
             <Header />
-            <UpdateRatesButton fetchRates={calculateRates}/>
             <GraphicCard />
-            <SampleGraphicCard />
-            <p>{todayRate}</p>
-            <p>{yesterdayRate}</p>
         </div>
     );
 }

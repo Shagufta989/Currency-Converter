@@ -16,7 +16,7 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
+  background-color: #543310;
 }
 
 .header h1 {
@@ -27,13 +27,38 @@ html {
 }
 
 .update-button {
-  background-color: #000000;
+  background-color: #543310;
   color: white;
+  align-content: center;
+  text-align: center;
+  font-size: 13px;
+  width: 60px;
+  height: 25px;
+  float: left;
+  margin-top: 3vh;
 }
-
-.selection-container {
+.result-button {
+  background-color: #543310;
+  color: white;
+  align-content: center;
+  text-align: center;
+  font-size: 13px;
+  width: 60px;
+  height: 25px;
+  margin-top: 3vh;
+  float:right;
+}
+.update-button:hover, .result-button:hover{
+  background-color: #A37330!important;
+  color: white!important;
+}
+.update-button:active, .result-button:active {
+  background-color: #1c3b0d!important;
+  color: white!important;
+}
+#main {
   display: flex;
-  min-height: 89vh;
+  min-height: 79vh;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
@@ -128,4 +153,11 @@ html {
   height: 0.5vw;
   width: 30%;
   border-radius: 0px 10px 10px 0px;
+}
+
+.bg-white {
+  background-color: #ffffff!important;
+}
+.ws-nowrap{
+  white-space: nowrap!important;
 }

@@ -54,7 +54,7 @@ function UpdateRatesButton({fetchRates}) {
         };
     };
     return (<div>
-        <button className="update-button" onClick={UpdateRates}>Update Rates</button>
+        <button className="btn waves-effect waves-light update-button" onClick={UpdateRates}>Update</button>
     </div>)
 }
 

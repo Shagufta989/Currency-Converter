@@ -1,6 +1,6 @@
 import React from "react";
 
-function GraphicCard({ result }) {
+function SampleGraphicCard({ result }) {
     return (<div>
         <div className="selection-container">
             <div className="selection-bg">
@@ -37,4 +37,4 @@ function GraphicCard({ result }) {
     </div>)
 }
 
-export default GraphicCard;
+export default SampleGraphicCard;

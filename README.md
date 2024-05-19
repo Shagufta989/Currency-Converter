@@ -1,74 +1,87 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Currency Converter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple Currency Converter application built using React. The app allows users to convert amounts between different currencies using real-time exchange rates.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Convert amounts between a wide range of currencies
+- Real-time exchange rate data
+- Intuitive and user-friendly interface
+- Supports multiple conversions at once
 
-### `npm start`
+## Screenshots
+![Screenshot 1](./public/assets/EaseUS_2024_05_18_21_34_44.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure you have the following installed on your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (https://nodejs.org/)
+- npm (https://www.npmjs.com/)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/shagufta-afzal/currency-converter-app.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd currency-converter-app
+    ```
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Running the App
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Start the development server:
+    ```bash
+    npm start
+    ```
+2. Open your browser and navigate to `http://localhost:3000` to view the app.
 
-### `npm run eject`
+### Fetching Exchange Rate Data
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This app uses a third-party API to fetch real-time exchange rate data. Follow these steps to set up the API:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Sign up for a free API key at a currency exchange rate provider like [ExchangeRate-API](https://www.exchangerate-api.com/) or [Open Exchange Rates](https://openexchangerates.org/).
+2. Create a `.env` file in the root of your project and add your API key:
+    ```env
+    REACT_APP_API_KEY=your_api_key_here
+    ```
+3. In your project, use the `REACT_APP_API_KEY` environment variable to fetch data from the API. For example:
+    ```javascript
+    const apiKey = process.env.REACT_APP_API_KEY;
+    const url = `https://api.exchangerate-api.com/v4/latest/USD?apikey=${apiKey}`;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            // Handle the exchange rate data
+        })
+        .catch(error => {
+            console.error('Error fetching exchange rate data:', error);
+        });
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Built With
 
-## Learn More
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Create React App](https://create-react-app.dev/) - Set up a modern web app by running one command
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-### Analyzing the Bundle Size
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Yet to set
->>>>>>> f7a9e8e5747333062ced04db92c5831a00396f2f
+- Hat tip to anyone whose code was used
+- Inspiration
