@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Libre Baskerville";
 }
 
 body,
@@ -37,6 +38,7 @@ html {
   float: left;
   margin-top: 3vh;
 }
+
 .result-button {
   background-color: #543310;
   color: white;
@@ -46,16 +48,21 @@ html {
   width: 60px;
   height: 25px;
   margin-top: 3vh;
-  float:right;
+  float: right;
 }
-.update-button:hover, .result-button:hover{
-  background-color: #A37330!important;
-  color: white!important;
+
+.update-button:hover,
+.result-button:hover {
+  background-color: #A37330 !important;
+  color: white !important;
 }
-.update-button:active, .result-button:active {
-  background-color: #1c3b0d!important;
-  color: white!important;
+
+.update-button:active,
+.result-button:active {
+  background-color: #1c3b0d !important;
+  color: white !important;
 }
+
 #main {
   display: flex;
   min-height: 79vh;
@@ -66,7 +73,7 @@ html {
 
 .selection-bg {
   display: flex;
-  flex-flow:column nowrap;
+  flex-flow: column nowrap;
   border-radius: 5%;
   border: 2px solid #d2d2d2;
   overflow: hidden;
@@ -81,6 +88,7 @@ html {
   min-width: 100%;
   padding: 6px 12px 18px;
 }
+
 .result-label {
   grid-area: 1 / 1 / 2 / 2;
   font-size: small;
@@ -117,6 +125,7 @@ html {
   text-align: center;
   place-self: center;
 }
+
 .compare-text {
   display: grid;
   place-items: center;
@@ -133,21 +142,24 @@ html {
   align-items: center;
   padding-left: 12px;
 }
-.rate-bar{
-  display:flex;
+
+.rate-bar {
+  display: flex;
   flex-flow: row nowrap;
   min-width: 100%;
   padding: 0px 12px 15px;
   align-items: center;
 }
-.first-percentage{
-  align-content:start;
+
+.first-percentage {
+  align-content: start;
   background-color: #c70e4c;
   height: 0.5vw;
   width: 70%;
   border-radius: 10px 0px 0px 10px;
 }
-.second-percentage{
+
+.second-percentage {
   align-content: center;
   background-color: tomato;
   height: 0.5vw;
@@ -156,8 +168,53 @@ html {
 }
 
 .bg-white {
-  background-color: #ffffff!important;
+  background-color: #ffffff !important;
 }
-.ws-nowrap{
-  white-space: nowrap!important;
+
+.ws-nowrap {
+  white-space: nowrap !important;
+}
+
+select {
+  width: 5rem;
+  border: none;
+  outline: none;
+}
+
+select option {
+  background-color: #ffffff;
+}
+select option {
+  font-size: 18px;
+  background-color: #ffffff;
+}
+
+select option:before {
+  content: ">";
+  font-size: 20px;
+  display: none;
+  padding-right: 10px;
+  padding-left: 5px;
+  color: #fff;
+}
+
+select option:hover:before {
+  display: inline;
+}
+
+input {
+  width: 6vw;
+  height: 5vh;
+  border: none;
+  font-size: 1.8vw;
+}
+
+.text-align-right {
+  text-align: right !important;
+}
+.small-border {
+  border: 0.5px solid #ccc;
+}
+.user-select-none {
+  user-select: none !important;
 }
